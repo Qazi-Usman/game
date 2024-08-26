@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .choice {
+            display: block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .choice:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Adventure Game</h1>
+        <p>You find yourself at a crossroads. Do you want to go left or right?</p>
+        <a href="left.html" class="choice">Go Left</a>
+        <a href="right.html" class="choice">Go Right</a>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- left.html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Path</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .choice {
+            display: block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .choice:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You chose the left path</h1>
+        <p>You encounter a friendly dragon. Do you talk to it or run away?</p>
+        <a href="talk.html" class="choice">Talk to the Dragon</a>
+        <a href="run.html" class="choice">Run Away</a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+ai blach box
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .choice {
+            display: block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .choice:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Adventure Game</h1>
+        <p>You find yourself at a crossroads. Do you want to go left or right?</p>
+        <a href="#left" class="choice">Go Left</a>
+        <a href="#right" class="choice">Go Right</a>
+        
+        <div id="left" style="display:none;">
+            <h1>You chose the left path</h1>
+            <p>You encounter a friendly dragon. Do you talk to it or run away?</p>
+            <a href="#talk" class="choice">Talk to the Dragon</a>
+            <a href="#run" class="choice">Run Away</a>
+        </div>
+        
+        <div id="right" style="display:none;">
+            <h1>You chose the right path</h1>
+            <p>You find a treasure chest. Do you open it or leave it alone?</p>
+            <a href="#open" class="choice">Open the Chest</a>
+            <a href="#leave" class="choice">Leave it Alone</a>
+        </div>
+        
+        <div id="talk" style="display:none;">
+            <h1>You talked to the dragon</h1>
+            <p>The dragon becomes your friend and helps you on your journey. You win!</p>
+            <a href="#start" class="choice">Play Again</a>
+        </div>
+        
+        <div id="run" style="display:none;">
+            <h1>You ran away</h1>
+            <p>You get lost in the forest and never find your way out. Game over.</p>
+            <a href="#start" class="choice">Play Again</a>
+        </div>
+        
+        <div id="open" style="display:none;">
+            <h1>You opened the chest</h1>
+            <p>You find a pile of gold and become rich. You win!</p>
+            <a href="#start" class="choice">Play Again</a>
+        </div>
+        
+        <div id="leave" style="display:none;">
+            <h1>You left the chest</h1>
+            <p>You walk away and miss out on the treasure. Game over.</p>
+            <a href="#start" class="choice">Play Again</a>
+        </div>
+        
+        <a name="start"></a>
+    </div>
+</body>
+</html>
+
+ai black box
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .choice {
+            display: block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .choice:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Adventure Game</h1>
+        <p>You find yourself at a crossroads. Do you want to go left or right?</p>
+        <button class="choice" onclick="document.getElementById('left').style.display='block';document.getElementById('right').style.display='none';">Go Left</button>
+        <button class="choice" onclick="document.getElementById('left').style.display='none';document.getElementById('right').style.display='block';">Go Right</button>
+        
+        <div id="left" style="display:none;">
+            <h1>You chose the left path</h1>
+            <p>You encounter a friendly dragon. Do you talk to it or run away?</p>
+            <button class="choice" onclick="document.getElementById('talk').style.display='block';document.getElementById('run').style.display='none';">Talk to the Dragon</button>
+            <button class="choice" onclick="document.getElementById('talk').style.display='none';document.getElementById('run').style.display='block';">Run Away</button>
+        </div>
+        
+        <div id="right" style="display:none;">
+            <h1>You chose the right path</h1>
+            <p>You find a treasure chest. Do you open it or leave it alone?</p>
+            <button class="choice" onclick="document.getElementById('open').style.display='block';document.getElementById('leave').style.display='none';">Open the Chest</button>
+            <button class="choice" onclick="document.getElementById('open').style.display='none';document.getElementById('leave').style.display='block';">Leave it Alone</button>
+        </div>
+        
+        <div id="talk" style="display:none;">
+            <h1>You talked to the dragon</h1>
+            <p>The dragon becomes your friend and helps you on your journey. You win!</p>
+            <button class="choice" onclick="location.reload()">Play Again</button>
+        </div>
+        
+        <div id="run" style="display:none;">
+            <h1>You ran away</h1>
+            <p>You get lost in the forest and never find your way out. Game over.</p>
+            <button class="choice" onclick="location.reload()">Play Again</button>
+        </div>
+        
+        <div id="open" style="display:none;">
+            <h1>You opened the chest</h1>
+            <p>You find a pile of gold and become rich. You win!</p>
+            <button class="choice" onclick="location.reload()">Play Again</button>
+        </div>
+        
+        <div id="leave" style="display:none;">
+            <h1>You left the chest</h1>
+            <p>You walk away and miss out on the treasure. Game over.</p>
+            <button class="choice" onclick="location.reload()">Play Again</button>
+        </div>
+    </div>
+</body>
+</html>
+
+right.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Path</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .choice {
+            display: block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .choice:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You chose the right path</h1>
+        <p>You find a treasure chest. Do you open it or leave it alone?</p>
+        <a href="open.html" class="choice">Open the Chest</a>
+        <a href="leave.html" class="choice">Leave it Alone</a>
+    </div>
+</body>
+</html>
+
+
+
+
+talk.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to the Dragon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You talked to the dragon</h1>
+        <p>The dragon becomes your friend and helps you on your journey. You win!</p>
+        <a href="index.html" class="choice">Play Again</a>
+    </div>
+</body>
+</html>
+
+
+run.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Away</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You ran away</h1>
+        <p>You get lost in the forest and never find your way out. Game over.</p>
+        <a href="index.html" class="choice">Play Again</a>
+    </div>
+</body>
+</html>
+
+
+open.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open the Chest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You opened the chest</h1>
+        <p>You find a pile of gold and become rich. You win!</p>
+        <a href="index.html" class="choice">Play Again</a>
+    </div>
+</body>
+</html>
+
+
+leave.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave the Chest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You left the chest</h1>
+        <p>You walk away and miss out on the treasure. Game over.</p>
+        <a href="index.html" class="choice">Play Again</a>
+    </div>
+</body>
+</html>
+
+
